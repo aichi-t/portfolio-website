@@ -1,0 +1,12 @@
+body {
+  padding: 0;
+  /* font-family: Roboto, Arial; */
+  font-family: -apple-system, Futura PT, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  color: black;
+}
+h1,
+h2 {
+  margin: 0;
+}
