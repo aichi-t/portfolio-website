@@ -5,8 +5,12 @@ import { SocialButton } from "./Styled"
 
 const HeroContainer = styled.div`
   text-align: center;
-  margin-top: 250px;
-  margin-bottom: 300px;
+  /* margin-top: 250px; */
+  /* margin-bottom: 300px; */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 const HeroTitle = styled.h1`
   font-size: 4rem;
@@ -22,13 +26,15 @@ const HeroSubTitle = styled.h3`
 
 const IconContainer = styled.div`
   display: flex;
-  justify-content: space-around;
-  width: 30%;
+  /* justify-content: space-around; */
+  justify-content: center;
+  /* justify-content: space-between; */
+  width: 40%;
   margin: 0 auto;
 `
 
 const icons = {
-  GitHub: <FaGithub style={{ height: 40, width: 40 }} />,
+  GitHub: <FaGithub style={{ height: 40, width: 40, marginRight: 30 }} />,
   LinkedIn: <FaLinkedinIn style={{ height: 40, width: 40 }} />,
 }
 
