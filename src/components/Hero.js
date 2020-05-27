@@ -7,7 +7,7 @@ const HeroContainer = styled.div`
   text-align: center;
   /* margin-top: 250px; */
   /* margin-bottom: 300px; */
-  height: 80vh;
+  height: 73vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
