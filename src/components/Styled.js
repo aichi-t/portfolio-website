@@ -11,6 +11,15 @@ export const SectionTitle = styled.h1`
   font-size: 40px;
   margin-bottom: 40px;
 `
+export const SocialButton = styled.a`
+  padding: 0;
+  color: black;
+  &:hover {
+    color: gray;
+  }
+  /* background-color: inherit; */
+  /* border: none; */
+`
 
 const media = {
   xs: styles => `

@@ -6,7 +6,7 @@ import styled from "styled-components"
 const StyledHeader = styled.header`
   padding: 1rem 4vw;
   min-height: 1.5rem;
-  background-color: black;
+  /* background-color: black; */
 `
 
 const Header = ({ siteTitle }) => (

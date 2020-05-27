@@ -3,6 +3,10 @@ import styled from "styled-components"
 import { SectionTitle } from "./Styled"
 import { Row, Col } from "react-awesome-styled-grid"
 
+const ProjectsContainer = styled.div`
+  /* margin: 3rem 0; */
+  margin-bottom: 3rem;
+`
 const ProjectContainer = styled(Col)`
   margin-bottom: 40px;
   border: 1px solid #d1d5da;
@@ -26,7 +30,7 @@ const ProjectLink = styled.a`
 
 const Projects = ({ projects }) => {
   return (
-    <div>
+    <ProjectsContainer>
       <SectionTitle>Projects</SectionTitle>
       <Row style={{ margin: 0, justifyContent: "space-between" }}>
         {projects.map((project, i) => (
@@ -39,7 +43,7 @@ const Projects = ({ projects }) => {
           </ProjectContainer>
         ))}
       </Row>
-    </div>
+    </ProjectsContainer>
   )
 }
 
