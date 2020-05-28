@@ -1,7 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import { SectionTitle } from "./Styled"
 import { AiOutlineMail } from "react-icons/ai"
-import { MdContentCopy } from "react-icons/md"
+// import { MdContentCopy } from "react-icons/md"
 import styled from "styled-components"
 
 const ContactContainer = styled.div`

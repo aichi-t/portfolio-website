@@ -82,9 +82,9 @@ const Experience = ({ experiences }) => {
 
   const images = data.allFile.nodes
   let imageList = {}
-  images.map(image => {
-    imageList[image["name".toLowerCase()]] = image["childImageSharp"]
-  })
+  images.map(
+    image => (imageList[image["name".toLowerCase()]] = image["childImageSharp"])
+  )
   console.log(imageList)
 
   return (
