@@ -47,7 +47,7 @@ const Hero = ({ socialLinks }) => {
       <HeroSubTitle>I am a Software Engineer based in Melbourne</HeroSubTitle>
       <IconContainer>
         {socialLinks.map((link, i) => (
-          <SocialLink key={i} href={link.url}>
+          <SocialLink key={i} href={link.url} target="_blank">
             {icons[link.name]}
           </SocialLink>
         ))}
