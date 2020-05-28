@@ -85,14 +85,12 @@ const Experience = ({ experiences }) => {
   images.map(
     image => (imageList[image["name".toLowerCase()]] = image["childImageSharp"])
   )
-  console.log(imageList)
 
   return (
     <div style={{ marginBottom: "3rem" }}>
       <SectionTitle>Experience</SectionTitle>
       {experiences.map((experience, i) => (
         <ExperienceContainer key={i}>
-          {console.log(experience.company.toLowerCase())}
           {imageList[experience.company.toLowerCase()] ? (
             <Image fixed={imageList[experience.company.toLowerCase()].fixed} />
           ) : (

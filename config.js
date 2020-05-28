@@ -35,7 +35,7 @@ module.exports = {
     },
     {
       title: "Portfolio Website",
-      url: "https://aichi-t.netlify.app/",
+      url: "https://aichi.dev/",
       description: "Portfolio site built with Gatsby.js",
     },
   ],

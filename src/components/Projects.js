@@ -44,7 +44,6 @@ const ViewAllContainer = styled.div`
 `
 
 const Projects = ({ projects }) => {
-  console.log(projects)
   return (
     <ProjectsContainer>
       <SectionTitle>Projects</SectionTitle>
@@ -53,14 +52,18 @@ const Projects = ({ projects }) => {
           <ProjectContainer key={i} xs={4} md={3.9}>
             <h2>{project.title}</h2>
             <ProjectDescription>{project.description}</ProjectDescription>
-            <ProjectLink href={project.url} target="_blank">
+            <ProjectLink href={project.url} target="_blank" rel="noopener">
               View Demo
             </ProjectLink>
           </ProjectContainer>
         ))}
       </Row>
       <ViewAllContainer>
-        <ViewAllProjects href={config.socialLinks[0].url} target="_blank">
+        <ViewAllProjects
+          href={config.socialLinks[0].url}
+          target="_blank"
+          rel="noopener"
+        >
           View All Projects →
         </ViewAllProjects>
       </ViewAllContainer>

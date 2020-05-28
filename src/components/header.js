@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -9,21 +8,7 @@ const StyledHeader = styled.header`
   /* background-color: black; */
 `
 
-const Header = ({ siteTitle }) => (
-  <StyledHeader>
-    <h1>
-      <Link
-        to="/"
-        style={{
-          color: `black`,
-          textDecoration: `none`,
-        }}
-      >
-        {/* {siteTitle} */}
-      </Link>
-    </h1>
-  </StyledHeader>
-)
+const Header = () => <StyledHeader></StyledHeader>
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

@@ -2,12 +2,26 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
+import styled from "styled-components"
 
+const Container = styled.div`
+  text-align: center;
+`
+const HomeLink = styled(Link)`
+  text-decoration: none;
+  color: gray;
+  &:hover {
+    text-decoration: underline;
+  }
+`
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <SEO itle="404: Not found" />
+    <Container>
+      <h1 style={{ marginBottom: 16 }}>Not Found</h1>
+      <HomeLink href="/">Go back to home</HomeLink>
+    </Container>
   </Layout>
 )
 
