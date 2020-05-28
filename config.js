@@ -37,7 +37,7 @@ module.exports = {
   experiences: [
     {
       jobTitle: "Freelance Software Engineer",
-      company: "",
+      company: "Freelance",
       roles: [
         "Develop web application for a tech publication",
         "Develop web application using React, Next.js and Firebase",
@@ -49,7 +49,7 @@ module.exports = {
     {
       jobTitle: "Software Engineer Intern",
       company: "Zelfium",
-      roles: ["Developed insights for the "],
+      roles: ["Develop insights for a personality test using Python"],
       startDate: "January 2020",
       endDate: "March 2020",
       logo: "",
@@ -58,8 +58,8 @@ module.exports = {
       jobTitle: "Software Engineer Intern",
       company: "teamLab",
       roles: [
-        "Developed an application using Java and SpringBoot",
-        "Deployed using Docker and AWS",
+        "Develop an application using Java and SpringBoot",
+        "Deploy using Docker and AWS",
       ],
       startDate: "January 2020",
       endDate: "January 2020",

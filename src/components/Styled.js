@@ -8,10 +8,13 @@ export const StyledContainer = styled.div`
 `
 
 export const SectionTitle = styled.h1`
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 40px;
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `
-export const SocialButton = styled.a`
+export const SocialLink = styled.a`
   padding: 0;
   color: black;
   &:hover {

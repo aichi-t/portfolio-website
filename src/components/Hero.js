@@ -1,12 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { SocialButton } from "./Styled"
+import { SocialLink } from "./Styled"
 
 const HeroContainer = styled.div`
   text-align: center;
-  /* margin-top: 250px; */
-  /* margin-bottom: 300px; */
+  margin-bottom: 3rem;
   height: 73vh;
   display: flex;
   flex-direction: column;
@@ -16,6 +15,9 @@ const HeroTitle = styled.h1`
   font-size: 4rem;
   margin: 0;
   margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `
 
 const HeroSubTitle = styled.h3`
@@ -45,9 +47,9 @@ const Hero = ({ socialLinks }) => {
       <HeroSubTitle>I am a Software Engineer based in Melbourne</HeroSubTitle>
       <IconContainer>
         {socialLinks.map((link, i) => (
-          <SocialButton key={i} href={link}>
+          <SocialLink key={i} href={link.url}>
             {icons[link.name]}
-          </SocialButton>
+          </SocialLink>
         ))}
       </IconContainer>
     </HeroContainer>

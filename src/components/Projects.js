@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { SectionTitle } from "./Styled"
 import { Row, Col } from "react-awesome-styled-grid"
+import config from "../../config"
 
 const ProjectsContainer = styled.div`
   /* margin: 3rem 0; */
@@ -17,18 +18,32 @@ const ProjectContainer = styled(Col)`
 const ProjectDescription = styled.p`
   color: gray;
   font-weight: 300;
+  min-height: 40px;
+  margin-bottom: 0.7rem;
 `
 
 const ProjectLink = styled.a`
   text-decoration: none;
-  font-weight: bold;
-  color: gray;
+  font-weight: 500;
+  display: inline-block;
+  color: green;
   &:hover {
     text-decoration: underline;
   }
 `
 
+const ViewAllProjects = styled.a`
+  text-decoration: none;
+  color: gray;
+  text-align: right;
+  &:hover {
+    text-decoration: underline;
+    /* color: gray; */
+  }
+`
+
 const Projects = ({ projects }) => {
+  console.log(projects)
   return (
     <ProjectsContainer>
       <SectionTitle>Projects</SectionTitle>
@@ -43,6 +58,9 @@ const Projects = ({ projects }) => {
           </ProjectContainer>
         ))}
       </Row>
+      <ViewAllProjects href={config.socialLinks[0].url} target="_blank">
+        View All Projects →
+      </ViewAllProjects>
     </ProjectsContainer>
   )
 }
