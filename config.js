@@ -33,6 +33,11 @@ module.exports = {
         "Ogiri is a Japanese game where the players have to come up with funny answers to the themes given.",
       techStack: "",
     },
+    {
+      title: "Portfolio Website",
+      url: "https://aichi-t.netlify.app/",
+      description: "Portfolio site built with Gatsby.js",
+    },
   ],
   experiences: [
     {

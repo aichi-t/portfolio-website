@@ -26,7 +26,7 @@ const ProjectLink = styled.a`
   text-decoration: none;
   font-weight: 500;
   display: inline-block;
-  color: green;
+  color: #1e799e;
   &:hover {
     text-decoration: underline;
   }
@@ -35,11 +35,12 @@ const ProjectLink = styled.a`
 const ViewAllProjects = styled.a`
   text-decoration: none;
   color: gray;
-  text-align: right;
   &:hover {
     text-decoration: underline;
-    /* color: gray; */
   }
+`
+const ViewAllContainer = styled.div`
+  text-align: right;
 `
 
 const Projects = ({ projects }) => {
@@ -58,9 +59,11 @@ const Projects = ({ projects }) => {
           </ProjectContainer>
         ))}
       </Row>
-      <ViewAllProjects href={config.socialLinks[0].url} target="_blank">
-        View All Projects →
-      </ViewAllProjects>
+      <ViewAllContainer>
+        <ViewAllProjects href={config.socialLinks[0].url} target="_blank">
+          View All Projects →
+        </ViewAllProjects>
+      </ViewAllContainer>
     </ProjectsContainer>
   )
 }
