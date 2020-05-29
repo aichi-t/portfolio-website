@@ -51,13 +51,12 @@ module.exports = {
         ],
       },
     },
-    //`gatsby-plugin-preact`,
+    `gatsby-plugin-preact`,
     // "gatsby-plugin-no-javascript",
     // {
     //   resolve: `gatsby-plugin-no-javascript`,
-    //   options: {
-    //     excludeFiles: "^component---src-pages-index-js-",
-    //   },
+    //   options: {},
+    // },
     // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
