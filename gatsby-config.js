@@ -51,11 +51,13 @@ module.exports = {
         ],
       },
     },
-    // `gatsby-plugin-preact`,
-    //"gatsby-plugin-no-javascript",
+    //`gatsby-plugin-preact`,
+    // "gatsby-plugin-no-javascript",
     // {
-    // resolve: `gatsby-plugin-no-javascript`,
-    // options: { excludeFiles: "webpack-runtime-[a-zA-Z0-9]+.js[.map]*" },
+    //   resolve: `gatsby-plugin-no-javascript`,
+    //   options: {
+    //     excludeFiles: "^component---src-pages-index-js-",
+    //   },
     // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
