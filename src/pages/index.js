@@ -10,7 +10,7 @@ import config from "../../config"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="" />
+    <SEO />
     <Hero socialLinks={config.socialLinks} />
     <Projects projects={config.projects} />
     <Experince experiences={config.experiences} />

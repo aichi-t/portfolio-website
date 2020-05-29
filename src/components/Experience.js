@@ -91,7 +91,10 @@ const Experience = ({ experiences }) => {
         // {{console.log(imageList[experience.company.toLowerCase()].fixed.src)}}
         <ExperienceContainer key={i}>
           {imageList[experience.company.toLowerCase()] ? (
-            <Image fixed={imageList[experience.company.toLowerCase()].fixed} />
+            <Image
+              fixed={imageList[experience.company.toLowerCase()].fixed}
+              alt={experience.company.toLowerCase()}
+            />
           ) : (
             // <FakeImage
             //   src={imageList[experience.company.toLowerCase()].fixed.src}

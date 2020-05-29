@@ -36,8 +36,10 @@ const IconContainer = styled.div`
 `
 
 const icons = {
-  GitHub: <FaGithub style={{ height: 40, width: 40, marginRight: 30 }} />,
-  LinkedIn: <FaLinkedinIn style={{ height: 40, width: 40 }} />,
+  GitHub: (
+    <FaGithub style={{ height: 40, width: 40, marginRight: 30 }} alt="github" />
+  ),
+  LinkedIn: <FaLinkedinIn style={{ height: 40, width: 40 }} alt="linkedin" />,
 }
 
 const Hero = ({ socialLinks }) => {
