@@ -47,11 +47,12 @@ const Image = styled(Img)`
   }
 `
 
-const FakeImage = styled.div`
+const FakeImage = styled.img`
   margin-right: 3vw;
-  margin-top: 20px;
-  width: 80px;
-  height: 80px;
+  margin-top: 1rem;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
   @media (max-width: 768px) {
     display: none;
   }
@@ -71,9 +72,6 @@ const Experience = ({ experiences }) => {
             fixed(width: 90, height: 90) {
               ...GatsbyImageSharpFixed
             }
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
           }
         }
       }
@@ -90,10 +88,14 @@ const Experience = ({ experiences }) => {
     <div style={{ marginBottom: "3rem" }}>
       <SectionTitle>Experience</SectionTitle>
       {experiences.map((experience, i) => (
+        // {{console.log(imageList[experience.company.toLowerCase()].fixed.src)}}
         <ExperienceContainer key={i}>
           {imageList[experience.company.toLowerCase()] ? (
             <Image fixed={imageList[experience.company.toLowerCase()].fixed} />
           ) : (
+            // <FakeImage
+            //   src={imageList[experience.company.toLowerCase()].fixed.src}
+            // />
             <FakeImage />
           )}
           <JobDescription>
